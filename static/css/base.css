@@ -1,0 +1,23 @@
+/*--导航栏中logo的大小*/
+.logo{
+    width: 100px
+}
+
+/*网页正文部分的背景颜色*/
+body{
+    background: #f3f3f3;
+}
+
+/*网页正文中的框的属性：背景颜色、大小、居中、浮动情况、内边距*/
+.main{
+    background: #fff;
+    width: 730px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px;
+}
+
+/*使“登录”这两个字居中*/
+.page-title{
+    text-align:center;
+}

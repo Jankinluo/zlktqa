@@ -1,0 +1,28 @@
+<!--继承自基类，显示导航栏，导航栏为各页面都相同的部分-->
+{% extends 'base.html' %}
+
+<!--页面的标题处显示“登录”这两个字-->
+{% block title %}登录{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/login_regist.css') }}"
+{% endblock %}
+
+<!--网页正文部分-->
+{% block main %}
+    <h3 class="page-title">登录</h3>
+    <form action="" method="POST">
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="手机号码" name="telephone">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="密码" name="password">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block">登录</button>
+                <!--btn-block可以使登录按钮和输入框一样长-->
+            </div>
+        </div>
+    </form>
+{% endblock %}
